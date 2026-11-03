@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Vikramjit Singh portrait">
+  <defs>
+    <linearGradient id="bg-vikramjit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#031D3D"/>
+      <stop offset="55%" stop-color="#05284D"/>
+      <stop offset="100%" stop-color="#083D73"/>
+    </linearGradient>
+    <radialGradient id="glow-vikramjit" cx="80%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin-vikramjit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDA072"/>
+      <stop offset="100%" stop-color="#C48456"/>
+    </linearGradient>
+    <linearGradient id="turban-vikramjit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCB017"/>
+      <stop offset="100%" stop-color="#D98A06"/>
+    </linearGradient>
+    <clipPath id="clip-vikramjit">
+      <circle cx="80" cy="80" r="76"/>
+    </clipPath>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="#FCB017"/>
+  <g clip-path="url(#clip-vikramjit)">
+    <rect width="160" height="160" fill="url(#bg-vikramjit)"/>
+    <rect width="160" height="160" fill="url(#glow-vikramjit)"/>
+    <!-- Tailored Bandhgala Suit -->
+    <path d="M20 162 C25 124, 52 114, 80 114 C108 114, 135 124, 140 162 Z" fill="#1E293B"/>
+    <!-- Collar & Gold Buttons -->
+    <path d="M64 113 L80 124 L96 113 L92 128 L68 128 Z" fill="#0F172A"/>
+    <circle cx="80" cy="134" r="2.2" fill="#FCB017"/>
+    <circle cx="80" cy="145" r="2.2" fill="#FCB017"/>
+    <!-- Neck -->
+    <rect x="67" y="96" width="26" height="22" rx="8" fill="#C48456"/>
+    <!-- Head -->
+    <path d="M51 68 C51 48, 109 48, 109 68 C109 96, 96 109, 80 109 C64 109, 51 96, 51 68 Z" fill="url(#skin-vikramjit)"/>
+    <!-- Full Groomed Beard & Mustache -->
+    <path d="M50 76 C50 100, 64 114, 80 114 C96 114, 110 100, 110 76 C106 89, 95 96, 80 96 C65 96, 54 89, 50 76 Z" fill="#1F242D"/>
+    <path d="M64 88 Q80 82 96 88 Q80 92 64 88 Z" fill="#14181F"/>
+    <!-- Warm Smile -->
+    <path d="M71 91 Q80 96 89 91" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <!-- Eyebrows & Eyes -->
+    <path d="M59 67 Q66 63 74 66" stroke="#14181F" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M86 66 Q94 63 101 67" stroke="#14181F" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <ellipse cx="67" cy="72" rx="3.4" ry="2.7" fill="#14181F"/>
+    <ellipse cx="93" cy="72" rx="3.4" ry="2.7" fill="#14181F"/>
+    <circle cx="68" cy="71" r="1" fill="#FFFFFF"/>
+    <circle cx="94" cy="71" r="1" fill="#FFFFFF"/>
+    <!-- Nose -->
+    <path d="M80 71 L78 83 Q80 85 83 83" stroke="#A66B40" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <!-- Golden Amber Sikh Turban (Dastar) with Fold Lines -->
+    <path d="M44 68 C40 42, 56 24, 80 24 C104 24, 120 42, 116 68 C108 58, 96 52, 80 56 C64 52, 52 58, 44 68 Z" fill="url(#turban-vikramjit)"/>
+    <path d="M48 56 Q80 38 112 56" stroke="#B46904" stroke-width="2" fill="none" opacity="0.65"/>
+    <path d="M52 45 Q80 30 108 45" stroke="#B46904" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M74 54 L80 44 L86 54 Z" fill="#05284D"/>
+  </g>
+</svg>

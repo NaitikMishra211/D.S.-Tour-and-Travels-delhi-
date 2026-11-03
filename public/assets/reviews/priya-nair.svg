@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Priya Nair portrait">
+  <defs>
+    <linearGradient id="bg-priya" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#083D73"/>
+      <stop offset="60%" stop-color="#05284D"/>
+      <stop offset="100%" stop-color="#031D3D"/>
+    </linearGradient>
+    <radialGradient id="glow-priya" cx="25%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin-priya" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CE8E60"/>
+      <stop offset="100%" stop-color="#B57449"/>
+    </linearGradient>
+    <clipPath id="clip-priya">
+      <circle cx="80" cy="80" r="76"/>
+    </clipPath>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="#FCB017"/>
+  <g clip-path="url(#clip-priya)">
+    <rect width="160" height="160" fill="url(#bg-priya)"/>
+    <rect width="160" height="160" fill="url(#glow-priya)"/>
+    <!-- Long Wavy Dark Hair Back -->
+    <path d="M40 66 C36 96, 38 130, 46 156 L114 156 C122 130, 124 96, 120 66 Z" fill="#171920"/>
+    <!-- Elegant Golden-Amber & Indigo Kurta -->
+    <path d="M24 162 C30 126, 54 116, 80 116 C106 116, 130 126, 136 162 Z" fill="#9E2A2B"/>
+    <path d="M38 162 C44 132, 62 122, 80 122 C98 122, 116 132, 122 162 Z" fill="#FCB017" opacity="0.22"/>
+    <!-- Gold Necklace & Kurta Neckline -->
+    <path d="M64 114 Q80 132 96 114" stroke="#FCB017" stroke-width="3.5" fill="none"/>
+    <!-- Neck -->
+    <rect x="69" y="96" width="22" height="24" rx="9" fill="#BA794D"/>
+    <!-- Gold Jhumka Earrings -->
+    <circle cx="49" cy="84" r="4.5" fill="#FCB017"/>
+    <path d="M45 89 Q49 95 53 89 Z" fill="#FFC43D"/>
+    <circle cx="111" cy="84" r="4.5" fill="#FCB017"/>
+    <path d="M107 89 Q111 95 115 89 Z" fill="#FFC43D"/>
+    <!-- Head -->
+    <path d="M52 67 C52 44, 108 44, 108 67 C108 94, 95 107, 80 107 C65 107, 52 94, 52 67 Z" fill="url(#skin-priya)"/>
+    <!-- Hair Front Parted -->
+    <path d="M48 72 C46 44, 62 33, 80 33 C98 33, 114 44, 112 72 C106 55, 93 46, 80 44 C67 46, 54 55, 48 72 Z" fill="#171920"/>
+    <!-- Delicate Bindi -->
+    <circle cx="80" cy="61" r="2.3" fill="#B91C1C"/>
+    <circle cx="80" cy="61" r="1" fill="#FCB017"/>
+    <!-- Eyebrows -->
+    <path d="M59 65 Q66 61 73 64" stroke="#171920" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M87 64 Q94 61 101 65" stroke="#171920" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Eyes -->
+    <ellipse cx="66" cy="71" rx="3.6" ry="2.8" fill="#171920"/>
+    <ellipse cx="94" cy="71" rx="3.6" ry="2.8" fill="#171920"/>
+    <circle cx="67" cy="70" r="1" fill="#FFFFFF"/>
+    <circle cx="95" cy="70" r="1" fill="#FFFFFF"/>
+    <!-- Nose -->
+    <path d="M80 71 L79 82 Q80 84 82 82" stroke="#9C5E35" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Warm Smile -->
+    <path d="M70 90 Q80 97 90 90" stroke="#8B2635" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M73 91 Q80 95 87 91" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

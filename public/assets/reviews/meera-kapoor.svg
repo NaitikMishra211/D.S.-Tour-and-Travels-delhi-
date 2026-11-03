@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Meera Kapoor portrait">
+  <defs>
+    <linearGradient id="bg-meera" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#083D73"/>
+      <stop offset="100%" stop-color="#031D3D"/>
+    </linearGradient>
+    <radialGradient id="glow-meera" cx="75%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin-meera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E2A67B"/>
+      <stop offset="100%" stop-color="#C8885C"/>
+    </linearGradient>
+    <clipPath id="clip-meera">
+      <circle cx="80" cy="80" r="76"/>
+    </clipPath>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="#FCB017"/>
+  <g clip-path="url(#clip-meera)">
+    <rect width="160" height="160" fill="url(#bg-meera)"/>
+    <rect width="160" height="160" fill="url(#glow-meera)"/>
+    <!-- Hair Back -->
+    <path d="M40 65 C36 96, 40 130, 48 156 L112 156 C120 130, 124 96, 120 65 Z" fill="#1F1B18"/>
+    <!-- Silk Saree with Golden Zari Border -->
+    <path d="M24 162 C30 126, 54 116, 80 116 C106 116, 130 126, 136 162 Z" fill="#0B4F6C"/>
+    <path d="M48 162 L98 117 L118 122 L76 162 Z" fill="#FCB017"/>
+    <!-- Pearl Necklace -->
+    <path d="M65 115 Q80 129 95 115" stroke="#FFFBEB" stroke-width="3.5" stroke-dasharray="4 3" fill="none"/>
+    <!-- Neck -->
+    <rect x="69" y="96" width="22" height="24" rx="9" fill="#C8885C"/>
+    <!-- Pearl Drop Earrings -->
+    <circle cx="50" cy="84" r="3.8" fill="#FFFBEB"/>
+    <circle cx="110" cy="84" r="3.8" fill="#FFFBEB"/>
+    <!-- Head -->
+    <path d="M52 67 C52 44, 108 44, 108 67 C108 94, 95 107, 80 107 C65 107, 52 94, 52 67 Z" fill="url(#skin-meera)"/>
+    <!-- Side-Swept Hair -->
+    <path d="M48 70 C47 42, 64 32, 82 32 C100 32, 113 44, 112 70 C104 52, 88 44, 68 48 C58 51, 52 59, 48 70 Z" fill="#1F1B18"/>
+    <!-- Gold & Maroon Bindi -->
+    <circle cx="80" cy="60" r="2.2" fill="#991B1B"/>
+    <!-- Eyebrows & Eyes -->
+    <path d="M59 65 Q66 61 73 64" stroke="#1F1B18" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M87 64 Q94 61 101 65" stroke="#1F1B18" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <ellipse cx="66" cy="71" rx="3.5" ry="2.8" fill="#1F1B18"/>
+    <ellipse cx="94" cy="71" rx="3.5" ry="2.8" fill="#1F1B18"/>
+    <circle cx="67" cy="70" r="1" fill="#FFFFFF"/>
+    <circle cx="95" cy="70" r="1" fill="#FFFFFF"/>
+    <!-- Nose -->
+    <path d="M80 71 L79 82 Q80 84 82 82" stroke="#A66B42" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Warm Smile -->
+    <path d="M70 90 Q80 97 90 90" stroke="#991B1B" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M73 91 Q80 95 87 91" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

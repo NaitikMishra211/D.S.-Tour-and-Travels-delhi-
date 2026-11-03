@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Ananya Iyer portrait">
+  <defs>
+    <linearGradient id="bg-ananya" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05284D"/>
+      <stop offset="100%" stop-color="#0E4E8E"/>
+    </linearGradient>
+    <radialGradient id="glow-ananya" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin-ananya" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4956A"/>
+      <stop offset="100%" stop-color="#BA7A4F"/>
+    </linearGradient>
+    <clipPath id="clip-ananya">
+      <circle cx="80" cy="80" r="76"/>
+    </clipPath>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="#FCB017"/>
+  <g clip-path="url(#clip-ananya)">
+    <rect width="160" height="160" fill="url(#bg-ananya)"/>
+    <rect width="160" height="160" fill="url(#glow-ananya)"/>
+    <!-- Hair Back -->
+    <path d="M42 64 C38 94, 42 126, 48 152 L112 152 C118 126, 122 94, 118 64 Z" fill="#181B22"/>
+    <!-- Contemporary Ivory & Gold Ethnic Blazer -->
+    <path d="M24 162 C30 126, 54 116, 80 116 C106 116, 130 126, 136 162 Z" fill="#F4F6FB"/>
+    <path d="M62 116 L80 152 L98 116 Z" fill="#FCB017"/>
+    <!-- Neck -->
+    <rect x="69" y="96" width="22" height="24" rx="9" fill="#BA7A4F"/>
+    <!-- Head -->
+    <path d="M52 67 C52 44, 108 44, 108 67 C108 94, 95 107, 80 107 C65 107, 52 94, 52 67 Z" fill="url(#skin-ananya)"/>
+    <!-- Hair Front -->
+    <path d="M48 70 C47 42, 63 32, 80 32 C97 32, 113 42, 112 70 C105 53, 94 46, 80 45 C66 46, 55 53, 48 70 Z" fill="#181B22"/>
+    <!-- Bindi -->
+    <circle cx="80" cy="60" r="2" fill="#05284D"/>
+    <!-- Stylish Eyeglasses -->
+    <rect x="56" y="64" width="20" height="13" rx="4" stroke="#FCB017" stroke-width="2.2" fill="none"/>
+    <rect x="84" y="64" width="20" height="13" rx="4" stroke="#FCB017" stroke-width="2.2" fill="none"/>
+    <line x1="76" y1="69" x2="84" y2="69" stroke="#FCB017" stroke-width="2"/>
+    <!-- Eyes -->
+    <ellipse cx="66" cy="70.5" rx="3.2" ry="2.6" fill="#181B22"/>
+    <ellipse cx="94" cy="70.5" rx="3.2" ry="2.6" fill="#181B22"/>
+    <circle cx="67" cy="69.5" r="1" fill="#FFFFFF"/>
+    <circle cx="95" cy="69.5" r="1" fill="#FFFFFF"/>
+    <!-- Nose -->
+    <path d="M80 71 L79 82 Q80 84 82 82" stroke="#9C5E35" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Cheerful Smile -->
+    <path d="M69 90 Q80 97 91 90" stroke="#9E2A2B" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M72 91 Q80 95 88 91" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,982 @@
+# PROJECT: D.S TOUR AND TRAVELS – COMPLETE PREMIUM TAXI BOOKING WEBSITE
+
+## MASTER WEBSITE DEVELOPMENT PROMPT
+
+Build a complete, professional, premium-looking, fully responsive taxi booking website for **D.S Tour and Travels**, based in New Delhi, India.
+
+IMPORTANT: If an existing website project is already available, update and improve that existing project. Do not unnecessarily rebuild it from scratch or remove existing working functionality.
+
+The website should look like a professionally developed travel and transportation business website, not a generic AI-generated template.
+
+Use the uploaded reference assets:
+1. D.S Tour and Travels logo – official website logo.
+2. Owner's photograph – use in the separate Owner section.
+
+The website must be fully functional, responsive, SEO-friendly, fast-loading and visually impressive.
+
+---
+
+# 1. BRAND IDENTITY AND COLOUR SYSTEM
+
+Take the entire website's visual identity from the uploaded D.S Tour and Travels logo.
+
+Use this colour palette consistently:
+
+- Primary Navy Blue: #053B70
+- Deep Navy: #05284D
+- Golden Yellow: #FFB319
+- Secondary Yellow: #FFA500
+- White: #FFFFFF
+- Light Background: #F5F7FA
+- Text Colour: #172B45
+
+Design requirements:
+
+- Navy blue should be the dominant brand colour.
+- Golden yellow should be used for buttons, highlights, icons and important details.
+- White backgrounds should maintain a clean and premium appearance.
+- Use subtle shadows, rounded corners and modern typography.
+- Maintain excellent colour contrast and readability.
+- Do not introduce unrelated colours such as purple, pink, green or red.
+
+Use the uploaded logo without changing its original design, proportions or colours.
+
+---
+
+# 2. WEBSITE OPENING ANIMATION
+
+When a visitor first opens the website, show a premium animated intro.
+
+Animation sequence:
+
+1. Start with a clean white background.
+2. Display a small animated taxi illustration in navy blue and golden yellow.
+3. The taxi should enter quickly from the left side.
+4. Make it move forward with a smooth, fast acceleration effect.
+5. Add subtle motion lines and a small road animation.
+6. Reveal the D.S Tour and Travels logo.
+7. Show the tagline: "Your Journey, Our Responsibility".
+8. Transition smoothly into the homepage.
+
+Animation requirements:
+
+- Duration approximately 2–3 seconds.
+- Do not make visitors wait unnecessarily.
+- Show the intro only once per browser session.
+- Add a Skip Intro option.
+- Respect reduced-motion accessibility settings.
+- Use a lightweight CSS/SVG taxi illustration instead of external vehicle photographs.
+
+---
+
+# 3. HEADER AND NAVIGATION
+
+Create a premium sticky navigation bar.
+
+Left side:
+- Official D.S Tour and Travels logo.
+
+Right side navigation must be exactly:
+
+Home | About Us | Our Fleet | Our Rates | Contact Us
+
+Add a prominent golden yellow button:
+
+"BOOK A TAXI"
+
+Header requirements:
+
+- Transparent or white background.
+- Subtle shadow when scrolling.
+- Smooth navigation transitions.
+- Mobile hamburger menu.
+- Mobile-friendly navigation.
+- Logo should remain clearly visible.
+
+IMPORTANT: Do not include old pricing terminology in navigation, dropdowns, hidden text or links.
+
+---
+
+# 4. HOMEPAGE HERO SECTION
+
+Create an impressive hero section immediately below the header.
+
+Main heading:
+
+"D.S TOUR AND TRAVELS"
+
+Subheading:
+
+"Reliable Taxi Services for Your Every Journey"
+
+Supporting description:
+
+"Travel comfortably and confidently with D.S Tour and Travels. Choose from our range of vehicle options and enjoy professional taxi booking assistance with transparent vehicle pricing."
+
+Primary CTA:
+
+"BOOK YOUR TAXI"
+
+Secondary CTA:
+
+"VIEW OUR RATES"
+
+Add three small highlights:
+
+- Multiple Vehicle Options
+- Transparent Pricing
+- Customer-Focused Service
+
+Design:
+
+- Premium navy blue and golden yellow gradient accents.
+- Large, bold typography.
+- Beautiful abstract road-inspired background graphics.
+- Subtle animated decorative elements.
+- Professional visual hierarchy.
+
+IMPORTANT:
+Do not add stock car photographs, AI-generated vehicle photographs or random vehicle images anywhere on the website. I will upload the actual vehicle photographs myself later.
+
+Use simple CSS illustrations, line icons and abstract road graphics.
+
+---
+
+# 5. ABOUT US PAGE AND SECTION
+
+Create a separate About Us page with its own clean URL:
+
+`/about-us`
+
+Also include a short About section on the homepage with a link to the full About Us page.
+
+Heading:
+
+"ABOUT D.S TOUR AND TRAVELS"
+
+Description:
+
+"D.S Tour and Travels is dedicated to providing reliable and comfortable taxi transportation services. We offer multiple vehicle options, transparent pricing information and professional travel assistance to make every journey convenient for our customers.
+
+Our focus is on customer satisfaction, dependable service and building long-term relationships with individuals, families and organizations."
+
+Add three feature cards:
+
+1. Reliable Transportation
+2. Transparent Pricing
+3. Customer-Focused Service
+
+Use simple navy blue and golden yellow icons.
+
+The separate About Us page should include:
+
+- Company introduction.
+- Our vision.
+- Our service approach.
+- Owner profile.
+- Customer relationship commitment.
+- CTA to contact or enquire.
+
+Do not add unsupported company history, awards, statistics or service guarantees.
+
+---
+
+# 6. OWNER SECTION – DALJEET SINGH
+
+Create a separate and visually premium owner profile section.
+
+Use the uploaded photograph of the owner.
+
+IMPORTANT IMAGE INSTRUCTIONS:
+
+- Use the exact uploaded photograph.
+- Do not generate another face.
+- Do not change the turban, beard, shirt, expression or identity.
+- Do not apply excessive filters.
+- Keep the photograph natural and professional.
+- Use a clean, elegant image frame.
+
+Layout:
+
+- Owner photograph on the left.
+- Owner information on the right.
+- Premium white background with navy blue and golden yellow accents.
+
+Heading:
+
+"MEET OUR OWNER"
+
+Name:
+
+"DALJEET SINGH"
+
+Designation:
+
+"Founder & Owner – D.S Tour and Travels"
+
+Description:
+
+"At D.S Tour and Travels, our vision is to provide dependable transportation services built on trust, comfort and customer satisfaction. We believe in maintaining professional relationships and delivering service that customers can rely on."
+
+Closing line:
+
+"Your trust drives our journey."
+
+Make this section elegant, personal and trustworthy.
+
+---
+
+# 7. OUR FLEET – VEHICLE LISTING
+
+Create a premium vehicle listing section.
+
+Heading:
+
+"OUR FLEET"
+
+Subheading:
+
+"Choose the Right Vehicle for Your Journey"
+
+IMPORTANT RULES:
+
+- Display ONLY the vehicle names provided below.
+- Do not invent additional vehicle models.
+- Do not add random car photographs.
+- Do not use stock images.
+- Do not generate AI vehicle photographs.
+- I will upload the actual vehicle photographs later.
+- Create clean image placeholders that can easily be replaced with my uploaded photographs.
+- Keep vehicle names exactly as provided.
+- Use premium vehicle cards with subtle hover animations.
+
+## REGULAR & SUV VEHICLES
+
+1. Dzire / Etios
+2. Toyota Crysta
+3. Kia Carens
+4. Honda Elevate / Urban Cruiser
+5. 16 Seater Urbania Tempo
+6. Bus & Luxury Car – On Demand
+
+## LUXURY VEHICLES
+
+1. Honda City
+2. Fortuner
+3. Mercedes E-Class
+4. Mercedes S-Class
+5. BMW
+
+Use two separate categories:
+
+- Sedan & SUV
+- Luxury Cars
+
+Each vehicle card should have:
+
+- Vehicle name.
+- Empty replaceable image area.
+- "VIEW RATES" button.
+- "BOOK THIS VEHICLE" button.
+
+The buttons should work and take visitors to the relevant pricing section or booking form.
+
+Do not display invented seating capacities, features or vehicle specifications.
+
+---
+
+# 8. OUR VEHICLE RATES – COMPLETE PRICING SECTION
+
+This is one of the most important sections of the website.
+
+Create a separate premium pricing section with two easy-to-read tables.
+
+Main heading:
+
+"OUR VEHICLE RATES"
+
+Subheading:
+
+"Transparent Pricing for Local & Outstation Journeys"
+
+## A. SEDAN & SUV RATES
+
+| CAB TYPE | 4 HRS / 40 KMS | 8 HRS / 80 KMS | EXTRA HRS | EXTRA KMS | LOCAL NIGHT (10 PM–5 AM) | OUTSTATION / KM | OUTSTATION TA |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Dzire / Etios | ₹1,200 | ₹1,600 | ₹150 | ₹16 | ₹250 | ₹14 | ₹400 |
+| Toyota Crysta | — | ₹2,600 | ₹250 | ₹24 | ₹300 | ₹21 | ₹400 |
+| Kia Carens | — | ₹2,200 | ₹200 | ₹20 | ₹300 | ₹20 | ₹400 |
+| Honda Elevate / Urban Cruiser | — | ₹2,000 | ₹180 | ₹18 | ₹250 | ₹18 | ₹400 |
+| 16 Seater Urbania Tempo | — | ₹9,500 | ₹500 | ₹30 | ₹500 | ₹30 | ₹600 |
+| Bus & Luxury Car | On Demand | On Demand | On Demand | On Demand | On Demand | On Demand | On Demand |
+
+## B. LUXURY CAR RATES
+
+| CAB TYPE | 4 HRS / 40 KMS | 8 HRS / 80 KMS | EXTRA HRS | EXTRA KMS | LOCAL NIGHT (11 PM–5 AM) | OUTSTATION / KM | OUTSTATION TA |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Honda City | — | ₹2,500 | ₹200 | ₹25 | ₹250 | ₹25 | ₹400 |
+| Fortuner | — | ₹5,500 | ₹300 | ₹60 | ₹300 | ₹50 | ₹600 |
+| Mercedes E-Class | — | ₹9,000 | ₹600 | ₹80 | ₹500 | ₹80 | ₹1,000 |
+| Mercedes S-Class | — | ₹17,000 | ₹1,600 | ₹170 | ₹1,000 | ₹170 | ₹1,500 |
+| BMW | — | ₹8,500 | ₹600 | ₹80 | ₹500 | ₹80 | ₹1,000 |
+
+## PRICING DESIGN REQUIREMENTS
+
+- Use separate sections for regular vehicles and luxury vehicles.
+- Make tables horizontally scrollable on mobile.
+- Keep column headings readable.
+- Highlight vehicle names.
+- Highlight important pricing information using golden yellow.
+- Use navy blue table headers.
+- Add subtle row hover effects.
+- Use a clean desktop table layout.
+- Add a note that all rates are subject to the Terms & Conditions.
+- Do not hide any pricing columns.
+
+IMPORTANT:
+
+- Keep every vehicle name and price exactly unchanged.
+- Do not calculate, modify, round off or invent prices.
+- The dash (—) means the rate is not provided.
+- "On Demand" must remain "On Demand".
+- The 4-hour and 8-hour values are pricing slabs, NOT separate taxi packages.
+- Do not add one-way pricing.
+- Do not add any new vehicle category.
+
+Use these section IDs for internal navigation:
+
+`#our-rates`
+
+`#sedan-suv-rates`
+
+`#luxury-car-rates`
+
+---
+
+# 9. BOOKING SECTION – TAXI BOOKING ONLY
+
+Create a beautiful and functional taxi booking enquiry form.
+
+Heading:
+
+"BOOK YOUR TAXI"
+
+Subheading:
+
+"Tell us about your journey. Our team will get in touch with you."
+
+Form fields:
+
+1. Full Name
+2. Mobile Number
+3. Pickup Location
+4. Destination
+5. Pickup Date
+6. Pickup Time
+7. Return Date, where applicable
+8. Return Time, where applicable
+9. Select Vehicle
+10. Journey Type
+11. Additional Requirements
+
+Vehicle dropdown must contain ONLY:
+
+- Dzire / Etios
+- Toyota Crysta
+- Kia Carens
+- Honda Elevate / Urban Cruiser
+- 16 Seater Urbania Tempo
+- Bus & Luxury Car
+- Honda City
+- Fortuner
+- Mercedes E-Class
+- Mercedes S-Class
+- BMW
+
+Journey Type:
+
+- Local
+- Outstation
+
+IMPORTANT BUSINESS RULES:
+
+- We do NOT provide one-way taxi services.
+- We do NOT offer taxi packages.
+- Do not add one-way options anywhere.
+- Do not add package booking options.
+- Do not advertise hourly, daily or sightseeing packages as separate products.
+- The 4-hour and 8-hour rates are pricing slabs only, not separate booking packages.
+- Do not promise instant booking confirmation.
+- Collect return journey details where applicable.
+
+Add a mandatory checkbox:
+
+"I understand that this is a booking enquiry and the final booking will be confirmed by the D.S Tour and Travels team."
+
+Submit button:
+
+"SUBMIT BOOKING ENQUIRY"
+
+After submission:
+
+- Validate all required fields.
+- Generate a properly formatted enquiry.
+- Open WhatsApp with the enquiry details using the configured WhatsApp number.
+- Show a clear success message.
+- Do not claim instant booking confirmation.
+- Provide a call option as an alternative.
+
+---
+
+# 10. WHY CHOOSE US SECTION
+
+Heading:
+
+"WHY CHOOSE D.S TOUR AND TRAVELS?"
+
+Create four premium feature cards:
+
+1. Multiple Vehicle Choices  
+   "Choose from regular, SUV and luxury vehicle options."
+
+2. Transparent Pricing  
+   "Clear vehicle-wise pricing for better convenience."
+
+3. Professional Service  
+   "We focus on dependable and customer-friendly transportation."
+
+4. Customer Relationships  
+   "We value trust and long-term business relationships."
+
+Use elegant line icons and subtle scroll animations.
+
+Do not make unverified claims such as 24/7 service, guaranteed availability, licensed drivers or hundreds of satisfied customers.
+
+---
+
+# 11. TERMS & CONDITIONS
+
+Heading:
+
+"TERMS & CONDITIONS"
+
+Display all ten conditions clearly.
+
+1. Mileage and destination will be charged from garage to garage.
+
+2. All toll tax and inter-state taxes will be charged extra as per actual.
+
+3. Outstation trips will be charged with a minimum of 250 KM per day.
+
+4. Guide and mineral water will be provided on request at an additional cost.
+
+5. Rates are subject to change with any hike in petrol/diesel prices or inter-state taxes.
+
+6. Night charges will be applicable from 10:00 PM to 05:00 AM for regular vehicles.
+
+7. Night charges for luxury vehicles will be applicable from 11:00 PM to 05:00 AM.
+
+8. Rates are valid till 31st March 2027.
+
+9. Any legal dispute will be subject to jurisdiction in Delhi only.
+
+10. GST charges: 18% (as applicable to regular vehicle rates).
+
+Design requirements:
+
+- Use numbered cards or a clean vertical layout.
+- Highlight important conditions.
+- Make the section readable on mobile.
+- Do not remove any condition.
+- Do not use the prohibited old pricing terminology anywhere.
+
+---
+
+# 12. BUSINESS CLOSING STATEMENT
+
+Create a premium closing section before the footer.
+
+Heading:
+
+"LET'S BUILD A GREAT BUSINESS RELATIONSHIP"
+
+Display this exact message:
+
+"Please give us a chance to serve you and your esteemed clients. We look forward to building a good business relationship with you and your organization in the future.
+
+Assuring you of our best services at all times."
+
+Add a golden yellow CTA button:
+
+"CONTACT US"
+
+Use an elegant navy blue background with subtle golden yellow decorative elements.
+
+---
+
+# 13. CONTACT US PAGE AND CONTACT SECTION
+
+Create a separate Contact Us page with its own clean URL:
+
+`/contact-us`
+
+Also show a short contact section on the homepage.
+
+Heading:
+
+"GET IN TOUCH"
+
+Display the following verified business details:
+
+Business Name: D.S Tour and Travels
+
+Owner: Daljeet Singh
+
+Call Number: 7065326532
+
+WhatsApp Number: 9871880500
+
+Office Address:
+
+OPPOSITE A 25, GULMOHAR PARK, NEAR SIRI FORT AUDITORIUM, NEW DELHI – 110049.
+
+## FUNCTIONAL CONTACT BUTTONS
+
+Call Now:
+
+`tel:7065326532`
+
+WhatsApp:
+
+`https://wa.me/919871880500`
+
+Use the Indian country code 91 in the WhatsApp URL.
+
+Display the phone and WhatsApp numbers clearly.
+
+Add:
+
+- Call Now button.
+- WhatsApp button.
+- Booking enquiry form.
+- Office address.
+- Google Maps section using the actual supplied address.
+
+If a verified map embed or map URL is unavailable, show the address and a map placeholder. Do not invent coordinates or a different location.
+
+Do not invent an email address, social media account or business operating hours.
+
+Make sure the contact details are consistent across the homepage, Contact Us page, booking form and footer.
+
+---
+
+# 14. FOOTER
+
+Create a premium navy blue footer with a golden yellow top border.
+
+Include:
+
+- Official D.S Tour and Travels logo.
+- D.S Tour and Travels business name.
+- Short business description.
+- Quick links.
+- Home.
+- About Us.
+- Our Fleet.
+- Our Rates.
+- Contact Us.
+- Terms & Conditions.
+- Call number.
+- WhatsApp number.
+- Office address.
+
+Use this exact copyright text:
+
+"© 2026 D.S Tour and Travels. All Rights Reserved. Powered by LeadX Technology"
+
+Ensure the footer does not contain any old pricing terminology.
+
+---
+
+# 15. ANIMATIONS AND UI/UX
+
+Make the entire website feel modern and premium.
+
+Include:
+
+- Smooth page scrolling.
+- Animated navigation transitions.
+- Subtle fade-in animations.
+- Section reveal on scroll.
+- Premium button hover effects.
+- Card hover animations.
+- Smooth accordion animations if accordions are used.
+- Subtle road-inspired visual elements.
+- Smooth page transitions.
+- Floating WhatsApp contact button.
+- Back-to-top button.
+- Sticky booking CTA on mobile.
+
+Avoid:
+
+- Excessive animations.
+- Flashing elements.
+- Unnecessary parallax.
+- Heavy video backgrounds.
+- Overloaded gradients.
+- Too many floating elements.
+
+The website must remain fast and smooth on mobile devices.
+
+---
+
+# 16. COMPLETE SEO STRATEGY – DELHI TAXI AND OUTSTATION ROUTES
+
+The business is based in New Delhi, India.
+
+The SEO strategy must focus on Delhi-origin taxi routes and relevant Delhi taxi booking searches.
+
+Do not add hundreds of destinations or all Indian states.
+
+## A. HOMEPAGE SEO
+
+Optimize the homepage for:
+
+- Taxi Service in Delhi
+- Best Taxi Service in Delhi
+- Outstation Taxi Service Delhi
+- Delhi Taxi Booking
+- Private Taxi Service Delhi
+- Luxury Car Rental Delhi
+
+Suggested SEO title:
+
+"D.S Tour and Travels | Taxi Service in Delhi & Outstation Cabs"
+
+Suggested meta description:
+
+"Book taxi services with D.S Tour and Travels in Delhi. Explore Sedan, SUV, Urbania Tempo and luxury car options for local and outstation journeys. Call 7065326532 or enquire on WhatsApp."
+
+## B. PRIORITY DELHI-ORIGIN ROUTES
+
+Create individual, unique SEO landing pages for these routes:
+
+1. Delhi to Agra
+2. Delhi to Jaipur
+3. Delhi to Haridwar
+4. Delhi to Rishikesh
+5. Delhi to Dehradun
+6. Delhi to Manali
+7. Delhi to Shimla
+8. Delhi to Chandigarh
+9. Delhi to Amritsar
+10. Delhi to Mathura
+11. Delhi to Vrindavan
+12. Delhi to Ayodhya
+13. Delhi to Varanasi
+14. Delhi to Lucknow
+15. Delhi to Nainital
+16. Delhi to Mussoorie
+17. Delhi to Udaipur
+18. Delhi to Jodhpur
+19. Delhi to Khatu Shyam Ji
+20. Delhi to Katra
+
+IMPORTANT:
+
+Only publish a route page after D.S Tour and Travels confirms that the business can serve that destination.
+
+If service availability has not been confirmed, keep the page unpublished or in draft status.
+
+Do not falsely claim that every destination is currently served.
+
+## C. UNIQUE CONTENT REQUIRED FOR EVERY ROUTE PAGE
+
+Every published route page must have:
+
+1. Unique SEO title.
+2. Unique meta description.
+3. Unique H1 heading.
+4. Relevant route-specific H2 headings.
+5. Naturally written route-related taxi booking content.
+6. Available vehicle categories based only on the existing fleet.
+7. Link to the existing Our Rates section.
+8. Booking enquiry process.
+9. WhatsApp enquiry CTA.
+10. Route-specific FAQs.
+11. Link to the homepage.
+12. Link to the Contact Us page.
+
+Use these keyword variations naturally:
+
+- Delhi to [Destination] Taxi
+- Delhi to [Destination] Cab Service
+- Taxi from Delhi to [Destination]
+- Delhi to [Destination] Private Cab
+- Delhi to [Destination] Car Rental
+
+Do not keyword-stuff the pages.
+
+Do not invent:
+
+- Route distances.
+- Travel times.
+- Route prices.
+- Customer reviews.
+- Availability.
+- Service guarantees.
+- Unverified route information.
+
+Do not create duplicate doorway pages. Each published page must offer genuinely useful and unique information.
+
+If unique content cannot be created, do not publish a thin duplicate page.
+
+## D. ADDITIONAL DELHI SEO KEYWORDS
+
+Use these naturally across appropriate pages:
+
+Delhi Outstation Taxi Service  
+Delhi to Tourist Places Taxi  
+Delhi Interstate Taxi Service  
+Private Taxi from Delhi  
+Delhi Sedan Taxi Service  
+Delhi SUV Taxi Service  
+Delhi Luxury Car Rental  
+Taxi Booking in Delhi  
+Outstation Taxi Service in Delhi  
+Delhi to Outstation Cab  
+Private Cab Service Delhi  
+Delhi to Other Cities Taxi  
+Delhi to Tourist Destinations Cab  
+Delhi Car Rental Service  
+Sedan Taxi Booking Delhi  
+SUV Taxi Booking Delhi  
+Innova Crysta Rental Delhi  
+Dzire Taxi Service Delhi  
+Urbania Tempo Traveller Delhi  
+Fortuner Rental Delhi  
+Mercedes Car Rental Delhi  
+BMW Rental Delhi
+
+Only use vehicle-related keywords that correspond to the existing vehicle list.
+
+## E. VEHICLE SEO
+
+Create relevant content for:
+
+- Dzire / Etios Taxi Service Delhi
+- Toyota Crysta Rental Delhi
+- Kia Carens Taxi Delhi
+- Honda Elevate / Urban Cruiser Taxi
+- Urbania Tempo Traveller Delhi
+- Honda City Rental Delhi
+- Fortuner Rental Delhi
+- Mercedes E-Class Rental Delhi
+- Mercedes S-Class Rental Delhi
+- BMW Rental Delhi
+
+Do not create new vehicle listings or unsupported vehicle claims.
+
+## F. SEO TECHNICAL REQUIREMENTS
+
+Implement:
+
+- Proper H1, H2 and H3 hierarchy.
+- Unique title for every published page.
+- Unique meta description.
+- Canonical URL.
+- Open Graph tags.
+- Twitter Card metadata.
+- Descriptive image alt text.
+- Semantic HTML5.
+- XML sitemap.
+- robots.txt.
+- Clean URLs.
+- Fast-loading assets.
+- Mobile-first indexing compatibility.
+- Descriptive internal links.
+- Proper favicon using the uploaded logo.
+- Breadcrumb navigation where appropriate.
+- LocalBusiness / TaxiService JSON-LD structured data.
+
+Use the supplied verified business details in structured data:
+
+Business Name: D.S Tour and Travels  
+Telephone: 7065326532  
+Address: OPPOSITE A 25, GULMOHAR PARK, NEAR SIRI FORT AUDITORIUM, NEW DELHI 110049  
+Country: India
+
+Do not invent ratings, reviews, coordinates, email addresses or operating hours.
+
+Use the actual website domain when available.
+
+Do not promise search rankings or claim that pages have been indexed.
+
+---
+
+# 17. CENTRAL BUSINESS CONFIGURATION
+
+Create a central configuration file for business information.
+
+Use these values:
+
+Business Name: D.S Tour and Travels
+
+Owner: Daljeet Singh
+
+Phone: 7065326532
+
+WhatsApp: 9871880500
+
+WhatsApp URL: `https://wa.me/919871880500`
+
+Address: OPPOSITE A 25, GULMOHAR PARK, NEAR SIRI FORT AUDITORIUM, NEW DELHI – 110049.
+
+Copyright Year: 2026
+
+Powered By: LeadX Technology
+
+Keep other unprovided information configurable and do not invent it.
+
+Use the central configuration wherever contact details appear, so that changing the number or address later requires editing only one file.
+
+Keep all vehicle pricing data in a structured data file so prices can be updated easily in the future.
+
+---
+
+# 18. TECHNICAL DEVELOPMENT REQUIREMENTS
+
+Preferred technology:
+
+- React
+- TypeScript
+- Modern CSS / Tailwind CSS
+- Lucide icons
+- Lightweight CSS animations
+
+Requirements:
+
+1. Fully responsive desktop, tablet and mobile design.
+2. Clean reusable components.
+3. Maintainable project structure.
+4. Functional navigation.
+5. Functional booking enquiry form.
+6. Working WhatsApp enquiry integration.
+7. Functional pricing section.
+8. Correct mobile layout.
+9. Optimized image loading.
+10. Accessible buttons and form labels.
+11. Good loading performance.
+12. No broken links.
+13. No console errors.
+14. No fake booking confirmations.
+15. Separate About Us and Contact Us pages.
+16. Route landing page architecture.
+17. SEO metadata for all published pages.
+18. Central business configuration.
+19. Structured vehicle pricing data.
+
+Use the uploaded logo and owner's actual photograph as local assets. Do not replace them with generated alternatives.
+
+Preserve all existing website functionality.
+
+---
+
+# 19. FINAL DESIGN DIRECTION
+
+The final website should look like a premium Indian taxi and travel company website.
+
+Visual inspiration:
+
+- Premium corporate website.
+- Modern transportation brand.
+- Clean luxury interface.
+- Professional business presentation.
+- Excellent typography and spacing.
+- Strong navy blue and golden yellow identity.
+
+The website should be visually impressive without becoming cluttered.
+
+---
+
+# 20. MOST IMPORTANT BUSINESS RESTRICTIONS
+
+1. This is ONLY a taxi booking website.
+2. No one-way taxi service.
+3. No taxi packages.
+4. No invented vehicle models.
+5. No invented vehicle prices.
+6. No stock car photographs.
+7. No AI-generated vehicle photographs.
+8. Use only the supplied logo and owner's actual photograph.
+9. Keep all provided vehicle pricing accurate.
+10. Keep the provided terms and conditions.
+11. Do not invent business information.
+12. Do not claim instant booking confirmation.
+13. Do not publish unconfirmed route services.
+14. Do not create duplicate SEO doorway pages.
+15. Do not change the navy blue and golden yellow branding.
+16. Preserve all existing working website functionality.
+
+## ABSOLUTE GLOBAL TERMINOLOGY RULE
+
+The old pricing term must not appear anywhere on the published website.
+
+This includes:
+
+- Homepage.
+- Navigation.
+- About Us.
+- Contact Us.
+- Fleet.
+- Pricing tables.
+- Booking form.
+- Buttons.
+- Footer.
+- SEO metadata.
+- URLs.
+- Image alt text.
+- Accessibility labels.
+- Hidden text.
+- Structured data.
+- Internal links.
+- Source strings rendered on the website.
+
+Use "Our Rates", "Our Pricing", "Vehicle Pricing" or "Pricing Information" as appropriate.
+
+Perform a case-insensitive project-wide search before finishing. Confirm that zero occurrences of the prohibited term remain in the published website.
+
+---
+
+# 21. FINAL IMPLEMENTATION AND TESTING
+
+Do not stop after generating a homepage or visual preview.
+
+Update the complete existing website project and implement every section.
+
+Before completing the work, verify:
+
+- Navigation is exactly correct.
+- Homepage works.
+- About Us page works.
+- Contact Us page works.
+- Fleet cards work.
+- All vehicle names are unchanged.
+- Every existing price is unchanged.
+- Pricing tables display all columns.
+- Booking enquiry form validates correctly.
+- Call button opens 7065326532.
+- WhatsApp button opens 9871880500 with the correct country code.
+- Office address is displayed correctly.
+- Footer copyright is exact.
+- All published route pages have unique content and metadata.
+- Unconfirmed route pages remain unpublished.
+- Internal links work.
+- Mobile and desktop layouts work.
+- Existing animations and features are preserved.
+- No console errors or broken links remain.
+- No occurrence of the prohibited old pricing term remains anywhere on the published website.
+
+Finally, provide a short implementation report listing completed changes, any route pages awaiting business confirmation and any remaining configuration requirements.
+
+**BUILD THE COMPLETE WEBSITE. UPDATE THE EXISTING PROJECT DIRECTLY. DO NOT JUST PROVIDE A MOCKUP OR A PLAN.**

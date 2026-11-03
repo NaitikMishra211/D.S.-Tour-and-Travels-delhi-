@@ -1,0 +1,432 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <!-- Subtle Golden Glow Beneath Car -->
+    <radialGradient id="dzire-gold-underglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.62" />
+      <stop offset="45%" stop-color="#FFB319" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="dzire-shadow-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#010914" stop-opacity="0.95" />
+      <stop offset="65%" stop-color="#021124" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#031D3D" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Pearl White Automotive Paint Gradients -->
+    <linearGradient id="dzire-body-main" x1="480" y1="115" x2="480" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="38%" stop-color="#F8FAFC" />
+      <stop offset="74%" stop-color="#E2E8F0" />
+      <stop offset="92%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <linearGradient id="dzire-hood-surface" x1="210" y1="215" x2="540" y2="295" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <linearGradient id="dzire-side-panel" x1="490" y1="220" x2="860" y2="385" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F1F5F9" />
+      <stop offset="82%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <linearGradient id="dzire-lower-skirt" x1="520" y1="330" x2="850" y2="395" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+
+    <linearGradient id="dzire-glass-tint" x1="450" y1="125" x2="480" y2="245" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#04152B" />
+      <stop offset="55%" stop-color="#082B52" />
+      <stop offset="100%" stop-color="#0E4178" />
+    </linearGradient>
+
+    <linearGradient id="dzire-chrome-trim" x1="150" y1="250" x2="450" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#CBD5E1" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="75%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <linearGradient id="dzire-grille-dark" x1="250" y1="280" x2="250" y2="365" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B192C" />
+      <stop offset="100%" stop-color="#020813" />
+    </linearGradient>
+
+    <radialGradient id="dzire-headlight-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="40%" stop-color="#FFF3C4" stop-opacity="0.85" />
+      <stop offset="75%" stop-color="#FCB017" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="dzire-tire-rubber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="dzire-alloy-rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="45%" stop-color="#94A3B8" />
+      <stop offset="70%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <filter id="dzire-soft-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+
+  <!-- 1. Golden Underglow & Ground Contact Shadow -->
+  <ellipse cx="485" cy="458" rx="425" ry="52" fill="url(#dzire-gold-underglow)" />
+  <ellipse cx="485" cy="442" rx="390" ry="34" fill="url(#dzire-shadow-core)" />
+  <ellipse cx="265" cy="452" rx="145" ry="20" fill="#FCB017" fill-opacity="0.34" filter="url(#dzire-soft-blur)" />
+  <ellipse cx="520" cy="456" rx="190" ry="18" fill="#FCB017" fill-opacity="0.26" filter="url(#dzire-soft-blur)" />
+
+  <!-- 2. Far-Side Front Left Tire (Under Front Bumper) -->
+  <ellipse cx="195" cy="406" rx="54" ry="38" fill="url(#dzire-tire-rubber)" />
+  <ellipse cx="195" cy="414" rx="44" ry="24" fill="#020617" />
+
+  <!-- 3. Rear Wheel Arch & Rear Right Tire/Alloy Wheel -->
+  <ellipse cx="792" cy="378" rx="64" ry="66" fill="#020617" />
+  <g transform="translate(792, 382)">
+    <!-- Tire Outer -->
+    <ellipse cx="0" cy="0" rx="56" ry="62" fill="url(#dzire-tire-rubber)" stroke="#334155" stroke-width="2" />
+    <ellipse cx="-3" cy="0" rx="40" ry="46" fill="#0F172A" stroke="url(#dzire-alloy-rim)" stroke-width="4" />
+    <!-- Multi-Spoke Alloy Wheel -->
+    <circle cx="-3" cy="0" r="18" fill="#1E293B" />
+    <g stroke="url(#dzire-alloy-rim)" stroke-width="5" stroke-linecap="round">
+      <line x1="-3" y1="0" x2="-3" y2="-42" />
+      <line x1="-3" y1="0" x2="32" y2="-24" />
+      <line x1="-3" y1="0" x2="35" y2="18" />
+      <line x1="-3" y1="0" x2="8" y2="42" />
+      <line x1="-3" y1="0" x2="-32" y2="28" />
+      <line x1="-3" y1="0" x2="-38" y2="-12" />
+    </g>
+    <circle cx="-3" cy="0" r="9" fill="#E2E8F0" stroke="#475569" stroke-width="2" />
+  </g>
+
+  <!-- 4. Main Pearl-White Sedan Body Shell (3/4 Front-Left Perspective) -->
+  <!-- Roofline, C-pillar, Rear Deck & Side Body -->
+  <path
+    d="M132 308
+       C136 272, 168 242, 224 224
+       L316 198
+       L418 130
+       C446 112, 488 104, 548 104
+       L684 108
+       C736 110, 782 132, 822 176
+       L868 214
+       C892 226, 904 252, 902 288
+       L896 354
+       C894 374, 880 386, 854 388
+       L846 388
+       C846 336, 820 306, 784 306
+       C746 306, 722 338, 722 390
+       L596 398
+       C596 334, 562 294, 514 294
+       C464 294, 428 336, 426 404
+       L242 412
+       C176 412, 134 398, 124 372
+       C118 352, 122 328, 132 308 Z"
+    fill="url(#dzire-body-main)"
+    stroke="#CBD5E1"
+    stroke-width="1.5"
+  />
+
+  <!-- Sculpted Side Body Panels & Character Crease -->
+  <path
+    d="M495 212
+       L858 216
+       C884 228, 896 252, 894 288
+       L888 352
+       L846 356
+       C840 318, 816 298, 784 298
+       C748 298, 724 326, 720 374
+       L596 382
+       C592 324, 558 288, 514 288
+       C486 288, 462 302, 446 326
+       L458 232 Z"
+    fill="url(#dzire-side-panel)"
+  />
+
+  <!-- Lower Side Rocker Panel Molding -->
+  <path
+    d="M596 376 L722 368 L722 388 L596 396 Z"
+    fill="url(#dzire-lower-skirt)"
+  />
+
+  <!-- 5. Sculpted Pearl-White Hood (Bonnet) & Crease Lines -->
+  <path
+    d="M158 274
+       C188 242, 248 216, 322 200
+       L518 210
+       C474 236, 424 266, 376 286
+       C302 294, 218 290, 158 274 Z"
+    fill="url(#dzire-hood-surface)"
+    stroke="#E2E8F0"
+    stroke-width="1.5"
+  />
+  <!-- Hood Dynamic Character Lines -->
+  <path
+    d="M326 202 C278 224, 232 250, 198 276"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M482 212 C438 238, 396 262, 356 282"
+    stroke="#FFFFFF"
+    stroke-width="3.5"
+    stroke-linecap="round"
+  />
+
+  <!-- 6. Windshield & Side Windows (Greenhouse) -->
+  <!-- Front Windshield -->
+  <path
+    d="M324 198
+       L422 134
+       C444 120, 478 114, 526 116
+       L576 120
+       L520 208
+       L324 198 Z"
+    fill="url(#dzire-glass-tint)"
+    stroke="#E2E8F0"
+    stroke-width="2"
+  />
+  <!-- Windshield Studio Light Reflections -->
+  <polygon points="354,196 436,136 474,136 396,198" fill="#FFFFFF" fill-opacity="0.22" />
+  <polygon points="408,198 486,136 504,136 428,200" fill="#FFFFFF" fill-opacity="0.1" />
+
+  <!-- Side Window Frame (Front Door + Rear Door + Quarter Glass) -->
+  <path
+    d="M546 208
+       L596 122
+       L692 122
+       C738 124, 778 144, 814 184
+       L834 208
+       L546 208 Z"
+    fill="url(#dzire-glass-tint)"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="3"
+  />
+  <!-- B-Pillar & C-Pillar Dividers -->
+  <polygon points="682,122 700,122 690,208 670,208" fill="#0F172A" />
+  <polygon points="778,150 790,160 776,208 764,208" fill="#0F172A" />
+  <!-- Side Window Glass Reflections -->
+  <polygon points="574,206 616,126 644,126 604,206" fill="#FFFFFF" fill-opacity="0.16" />
+  <polygon points="706,206 734,134 756,142 732,206" fill="#FFFFFF" fill-opacity="0.14" />
+
+  <!-- Chrome Lower Window Beltline Molding -->
+  <path
+    d="M542 209 L838 209"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="4.5"
+    stroke-linecap="round"
+  />
+
+  <!-- Door Panel Seam Lines & Chrome Door Handles -->
+  <path
+    d="M684 209 L674 372"
+    stroke="#94A3B8"
+    stroke-width="1.8"
+  />
+  <path
+    d="M552 209 L546 296"
+    stroke="#94A3B8"
+    stroke-width="1.8"
+  />
+  <!-- Front & Rear Chrome Door Handles -->
+  <rect x="634" y="232" width="32" height="9" rx="4.5" fill="url(#dzire-chrome-trim)" stroke="#64748B" stroke-width="1" />
+  <rect x="752" y="230" width="30" height="9" rx="4.5" fill="url(#dzire-chrome-trim)" stroke="#64748B" stroke-width="1" />
+
+  <!-- Upper Shoulder Line & Lower Door Sculpt Line -->
+  <path
+    d="M446 254 L878 244"
+    stroke="#FFFFFF"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M598 344 L722 338"
+    stroke="#94A3B8"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- 7. Body-Colored Side Mirrors (ORVMs) with LED Turn Indicators -->
+  <!-- Left (Driver/Passenger Side) Mirror -->
+  <g>
+    <path
+      d="M542 206 L568 184 C582 180, 598 188, 596 204 C594 216, 578 222, 558 218 L542 206 Z"
+      fill="#FFFFFF"
+      stroke="#94A3B8"
+      stroke-width="1.8"
+    />
+    <rect x="562" y="197" width="26" height="4.5" rx="2.2" fill="#FCB017" />
+  </g>
+  <!-- Far-Side Right Mirror Tip -->
+  <path
+    d="M326 194 L302 184 C294 184, 290 190, 294 198 L318 202 Z"
+    fill="#E2E8F0"
+    stroke="#94A3B8"
+    stroke-width="1.5"
+  />
+
+  <!-- 8. Signature Maruti Suzuki Dzire Hexagonal Chrome Grille -->
+  <polygon
+    points="162,284 328,288 312,356 174,350"
+    fill="url(#dzire-grille-dark)"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="6.5"
+    stroke-linejoin="round"
+  />
+  <!-- Horizontal Chrome Grille Bars -->
+  <line x1="170" y1="302" x2="320" y2="306" stroke="url(#dzire-chrome-trim)" stroke-width="3.2" />
+  <line x1="173" y1="319" x2="316" y2="323" stroke="url(#dzire-chrome-trim)" stroke-width="3.2" />
+  <line x1="176" y1="336" x2="312" y2="340" stroke="url(#dzire-chrome-trim)" stroke-width="3" />
+
+  <!-- Suzuki 'S' Chrome Emblem in Grille Center -->
+  <g transform="translate(234, 304)">
+    <rect x="0" y="0" width="22" height="22" rx="5" fill="#0F172A" stroke="url(#dzire-chrome-trim)" stroke-width="2" />
+    <path
+      d="M16 5 H7 L5 9 L16 13 L14 17 H5"
+      stroke="#FFFFFF"
+      stroke-width="2.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- 9. Swept-Back Projector Headlamps & LED DRLs -->
+  <!-- Main Near-Side Right Headlamp (Viewer Center-Left) -->
+  <path
+    d="M336 286
+       L438 258
+       C448 256, 452 266, 444 278
+       L414 310
+       C400 320, 368 322, 332 316
+       Z"
+    fill="#09192F"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="3"
+  />
+  <!-- Projector Lens & Warm LED DRL Strip -->
+  <ellipse cx="384" cy="292" rx="18" ry="14" fill="#1E3A5F" stroke="#FFFFFF" stroke-width="2.5" />
+  <circle cx="384" cy="292" r="8" fill="#FFFFFF" />
+  <circle cx="356" cy="298" r="9" fill="#E2E8F0" />
+  <path
+    d="M338 310 L406 306 L436 272"
+    stroke="#FFFFFF"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <circle cx="384" cy="292" r="42" fill="url(#dzire-headlight-glow)" />
+
+  <!-- Far-Side Left Headlamp (Viewer Far-Left) -->
+  <path
+    d="M132 292
+       L158 282
+       L156 314
+       L128 312
+       C124 306, 126 298, 132 292 Z"
+    fill="#09192F"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="2.5"
+  />
+  <circle cx="144" cy="298" r="8" fill="#FFFFFF" />
+  <circle cx="144" cy="298" r="28" fill="url(#dzire-headlight-glow)" />
+
+  <!-- 10. Lower Front Bumper, Air Dam & Chrome Fog Lamp Bezels -->
+  <!-- Central Lower Air Intake -->
+  <polygon
+    points="166,368 314,374 306,396 172,390"
+    fill="#091526"
+    stroke="#334155"
+    stroke-width="1.5"
+  />
+  <line x1="172" y1="379" x2="310" y2="385" stroke="#475569" stroke-width="2" />
+
+  <!-- Near-Side Fog Lamp Pod with Chrome C-Bezel -->
+  <polygon
+    points="336,348 408,342 398,386 328,388"
+    fill="#091526"
+    stroke="#475569"
+    stroke-width="1.5"
+  />
+  <path
+    d="M346 350 L398 346 L390 384 L342 384"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="370" cy="366" r="10" fill="#FFFBEB" stroke="#FCB017" stroke-width="2" />
+
+  <!-- Far-Side Fog Lamp Pod -->
+  <polygon
+    points="126,346 154,348 152,380 124,376"
+    fill="#091526"
+    stroke="url(#dzire-chrome-trim)"
+    stroke-width="2.5"
+  />
+  <circle cx="140" cy="364" r="7" fill="#FFFBEB" />
+
+  <!-- Front Number Plate (Clean Commercial Taxi Plate) -->
+  <rect
+    x="186"
+    y="344"
+    width="112"
+    height="26"
+    rx="4"
+    fill="#FFFFFF"
+    stroke="#05284D"
+    stroke-width="2.5"
+  />
+  <rect x="186" y="344" width="18" height="26" rx="2" fill="#FCB017" />
+  <text
+    x="250"
+    y="362"
+    text-anchor="middle"
+    fill="#031D3D"
+    font-family="sans-serif"
+    font-size="14"
+    font-weight="900"
+    letter-spacing="2"
+  >
+    DZIRE
+  </text>
+
+  <!-- 11. Front Right Wheel Arch & Precision Multi-Spoke Alloy Wheel -->
+  <ellipse cx="512" cy="378" rx="82" ry="82" fill="#020617" />
+  <g transform="translate(514, 384)">
+    <!-- Tire Tread & Sidewall -->
+    <ellipse cx="0" cy="0" rx="74" ry="78" fill="url(#dzire-tire-rubber)" stroke="#334155" stroke-width="2.5" />
+    <ellipse cx="-5" cy="0" rx="54" ry="60" fill="#0F172A" stroke="url(#dzire-alloy-rim)" stroke-width="5" />
+    <!-- Brake Disc & Caliper -->
+    <circle cx="-5" cy="0" r="36" fill="#334155" stroke="#64748B" stroke-width="2" />
+    <rect x="14" y="-22" width="14" height="28" rx="4" fill="#FCB017" />
+    <!-- Machine-Cut 10-Spoke Alloy Rim -->
+    <g stroke="url(#dzire-alloy-rim)" stroke-width="6.5" stroke-linecap="round">
+      <line x1="-5" y1="0" x2="-5" y2="-56" />
+      <line x1="-5" y1="0" x2="30" y2="-44" />
+      <line x1="-5" y1="0" x2="46" y2="-14" />
+      <line x1="-5" y1="0" x2="42" y2="24" />
+      <line x1="-5" y1="0" x2="18" y2="52" />
+      <line x1="-5" y1="0" x2="-24" y2="52" />
+      <line x1="-5" y1="0" x2="-52" y2="26" />
+      <line x1="-5" y1="0" x2="-56" y2="-14" />
+      <line x1="-5" y1="0" x2="-36" y2="-46" />
+    </g>
+    <!-- Center Hub Cap with 'S' Emblem -->
+    <circle cx="-5" cy="0" r="14" fill="#0F172A" stroke="url(#dzire-alloy-rim)" stroke-width="3" />
+    <circle cx="-5" cy="0" r="5" fill="#FCB017" />
+  </g>
+</svg>

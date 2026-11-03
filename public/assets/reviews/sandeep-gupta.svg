@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Sandeep Gupta portrait">
+  <defs>
+    <linearGradient id="bg-sandeep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#031D3D"/>
+      <stop offset="100%" stop-color="#083D73"/>
+    </linearGradient>
+    <radialGradient id="glow-sandeep" cx="75%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#FCB017" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FCB017" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin-sandeep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DFA376"/>
+      <stop offset="100%" stop-color="#C7875A"/>
+    </linearGradient>
+    <clipPath id="clip-sandeep">
+      <circle cx="80" cy="80" r="76"/>
+    </clipPath>
+  </defs>
+  <circle cx="80" cy="80" r="78" fill="#FCB017"/>
+  <g clip-path="url(#clip-sandeep)">
+    <rect width="160" height="160" fill="url(#bg-sandeep)"/>
+    <rect width="160" height="160" fill="url(#glow-sandeep)"/>
+    <!-- Smart Collared Polo Shirt with Gold Trim -->
+    <path d="M22 162 C26 124, 52 114, 80 114 C108 114, 134 124, 138 162 Z" fill="#0F3A68"/>
+    <path d="M62 114 L80 136 L98 114" stroke="#FCB017" stroke-width="3" fill="none"/>
+    <!-- Neck -->
+    <rect x="67" y="96" width="26" height="24" rx="10" fill="#C7875A"/>
+    <!-- Ears -->
+    <ellipse cx="49" cy="76" rx="6" ry="10" fill="#C7875A"/>
+    <ellipse cx="111" cy="76" rx="6" ry="10" fill="#C7875A"/>
+    <!-- Head -->
+    <path d="M50 66 C50 42, 110 42, 110 66 C110 95, 96 108, 80 108 C64 108, 50 95, 50 66 Z" fill="url(#skin-sandeep)"/>
+    <!-- Salt-and-Pepper Hair -->
+    <path d="M48 67 C46 43, 60 33, 80 33 C100 33, 114 43, 112 67 C109 53, 98 46, 80 46 C62 46, 51 53, 48 67 Z" fill="#374151"/>
+    <!-- Classic Eyeglasses -->
+    <rect x="55" y="64" width="21" height="13" rx="3" stroke="#05284D" stroke-width="2.2" fill="none"/>
+    <rect x="84" y="64" width="21" height="13" rx="3" stroke="#05284D" stroke-width="2.2" fill="none"/>
+    <line x1="76" y1="69" x2="84" y2="69" stroke="#05284D" stroke-width="2"/>
+    <!-- Eyebrows & Eyes -->
+    <path d="M58 62 Q66 59 73 62" stroke="#374151" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M87 62 Q94 59 102 62" stroke="#374151" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <ellipse cx="66" cy="70.5" rx="3.2" ry="2.6" fill="#1F2937"/>
+    <ellipse cx="94" cy="70.5" rx="3.2" ry="2.6" fill="#1F2937"/>
+    <!-- Mustache & Warm Smile -->
+    <path d="M67 87 Q80 83 93 87 Q80 90 67 87 Z" fill="#374151"/>
+    <path d="M69 91 Q80 98 91 91" stroke="#8C4A27" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M72 92 Q80 96 88 92" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>
