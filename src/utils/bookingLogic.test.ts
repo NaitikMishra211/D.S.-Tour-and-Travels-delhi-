@@ -518,4 +518,43 @@ test("ServiceStatsSection contains exact 4 requested metrics and CustomerReviews
   assert.ok(reviewsIdx < fleetIdx, "Expected <CustomerReviewsSection before <FleetSection");
 });
 
+test("GoDaddy Node.js Hosting startup configuration uses PORT environment variable and binds to 0.0.0.0", () => {
+  const pkgJson = JSON.parse(
+    fs.readFileSync(path.resolve(process.cwd(), "package.json"), "utf8")
+  );
+  assert.equal(
+    pkgJson.scripts.dev,
+    "vite --port ${PORT:-3000} --host 0.0.0.0"
+  );
+  assert.equal(
+    pkgJson.scripts.preview,
+    "vite preview --port ${PORT:-3000} --host 0.0.0.0"
+  );
+  assert.equal(pkgJson.scripts.start, "node server.js");
+
+  const airoConfig = JSON.parse(
+    fs.readFileSync(path.resolve(process.cwd(), ".airo/config.json"), "utf8")
+  );
+  assert.equal(
+    airoConfig.serve,
+    "vite --port ${PORT:-3000} --host 0.0.0.0"
+  );
+  assert.equal(airoConfig.start, "node server.js");
+
+  const viteConfigSource = fs.readFileSync(
+    path.resolve(process.cwd(), "vite.config.ts"),
+    "utf8"
+  );
+  assert.ok(viteConfigSource.includes("process.env.PORT"));
+  assert.ok(viteConfigSource.includes("host: '0.0.0.0'"));
+
+  const serverSource = fs.readFileSync(
+    path.resolve(process.cwd(), "server.js"),
+    "utf8"
+  );
+  assert.ok(serverSource.includes("process.env.PORT"));
+  assert.ok(serverSource.includes("0.0.0.0"));
+});
+
+
 
