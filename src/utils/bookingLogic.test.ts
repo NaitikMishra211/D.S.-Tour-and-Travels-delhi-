@@ -135,15 +135,19 @@ test("Fleet vehicles and pricing rows match exact TAXI, TEMPO TRAVELLER, and LUX
     );
   }
 
-  // Verify Maruti Suzuki Dzire, Toyota Crysta, and Kia Carens use /assets/dzire.jpg, /assets/crysta.jpg, and /assets/carens.jpg instead of placeholders or browser-uploaded photos
+  // Verify Maruti Suzuki Dzire, Toyota Crysta, and Kia Carens use /assets/dzire.png, /assets/crysta.png, and /assets/carens.png and exist on disk
   assert.equal(taxiCategory[0].id, "maruti-suzuki-dzire");
-  assert.equal(taxiCategory[0].imageUrl, "/assets/dzire.jpg");
-  assert.equal(resolveVehicleImageUrl(taxiCategory[0], {}), "/assets/dzire.jpg");
+  assert.equal(taxiCategory[0].imageUrl, "/assets/dzire.png");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[0], {}), "/assets/dzire.png");
   assert.equal(
     resolveVehicleImageUrl(taxiCategory[0], {
       "maruti-suzuki-dzire": "data:image/jpeg;base64,browser-upload",
     }),
-    "/assets/dzire.jpg"
+    "/assets/dzire.png"
+  );
+  assert.equal(
+    fs.existsSync(path.resolve(process.cwd(), "public/assets/dzire.png")),
+    true
   );
 
   assert.equal(taxiCategory[1].id, "toyota-etios");
@@ -166,23 +170,31 @@ test("Fleet vehicles and pricing rows match exact TAXI, TEMPO TRAVELLER, and LUX
   );
 
   assert.equal(taxiCategory[3].id, "toyota-crysta");
-  assert.equal(taxiCategory[3].imageUrl, "/assets/crysta.jpg");
-  assert.equal(resolveVehicleImageUrl(taxiCategory[3], {}), "/assets/crysta.jpg");
+  assert.equal(taxiCategory[3].imageUrl, "/assets/crysta.png");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[3], {}), "/assets/crysta.png");
   assert.equal(
     resolveVehicleImageUrl(taxiCategory[3], {
       "toyota-crysta": "data:image/jpeg;base64,browser-upload",
     }),
-    "/assets/crysta.jpg"
+    "/assets/crysta.png"
+  );
+  assert.equal(
+    fs.existsSync(path.resolve(process.cwd(), "public/assets/crysta.png")),
+    true
   );
 
   assert.equal(taxiCategory[4].id, "kia-carens");
-  assert.equal(taxiCategory[4].imageUrl, "/assets/carens.jpg");
-  assert.equal(resolveVehicleImageUrl(taxiCategory[4], {}), "/assets/carens.jpg");
+  assert.equal(taxiCategory[4].imageUrl, "/assets/carens.png");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[4], {}), "/assets/carens.png");
   assert.equal(
     resolveVehicleImageUrl(taxiCategory[4], {
       "kia-carens": "data:image/jpeg;base64,browser-upload",
     }),
-    "/assets/carens.jpg"
+    "/assets/carens.png"
+  );
+  assert.equal(
+    fs.existsSync(path.resolve(process.cwd(), "public/assets/carens.png")),
+    true
   );
 
   // Verify Honda City, Honda Elevate, and Toyota Urban Cruiser have separate IDs, uploaded photographs, and booking options
