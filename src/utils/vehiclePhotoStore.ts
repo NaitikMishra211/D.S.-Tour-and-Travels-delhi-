@@ -49,9 +49,9 @@ export function removeVehiclePhoto(vehicleId: string): void {
 
 export function resolveVehicleImageUrl(
   vehicle: FleetVehicle,
-  customPhotos: VehiclePhotoMap
+  customPhotos?: VehiclePhotoMap
 ): string | undefined {
-  return customPhotos[vehicle.id] || vehicle.imageUrl;
+  return vehicle.imageUrl || customPhotos?.[vehicle.id];
 }
 
 export function getVehiclesByCategory(category: VehicleCategory): FleetVehicle[] {
@@ -59,20 +59,16 @@ export function getVehiclesByCategory(category: VehicleCategory): FleetVehicle[]
 }
 
 export function useVehiclePhotos() {
-  const [customPhotos, setCustomPhotos] = useState<VehiclePhotoMap>(() =>
-    getStoredVehiclePhotos()
-  );
+  const [customPhotos, setCustomPhotos] = useState<VehiclePhotoMap>({});
 
   useEffect(() => {
-    const refresh = () => {
-      setCustomPhotos(getStoredVehiclePhotos());
-    };
-    window.addEventListener(PHOTO_UPDATE_EVENT, refresh);
-    window.addEventListener("storage", refresh);
-    return () => {
-      window.removeEventListener(PHOTO_UPDATE_EVENT, refresh);
-      window.removeEventListener("storage", refresh);
-    };
+    if (typeof window !== "undefined") {
+      try {
+        window.localStorage.removeItem(STORAGE_KEY);
+      } catch {
+        // Ignore storage errors
+      }
+    }
   }, []);
 
   const uploadPhotoForVehicle = useCallback((vehicleId: string, file: File) => {
@@ -81,6 +77,7 @@ export function useVehiclePhotos() {
     reader.onload = () => {
       if (typeof reader.result === "string") {
         saveVehiclePhoto(vehicleId, reader.result);
+        setCustomPhotos(getStoredVehiclePhotos());
       }
     };
     reader.readAsDataURL(file);
@@ -88,6 +85,7 @@ export function useVehiclePhotos() {
 
   const clearPhotoForVehicle = useCallback((vehicleId: string) => {
     removeVehiclePhoto(vehicleId);
+    setCustomPhotos(getStoredVehiclePhotos());
   }, []);
 
   return {

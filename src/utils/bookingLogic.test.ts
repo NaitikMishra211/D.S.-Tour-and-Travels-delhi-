@@ -135,10 +135,18 @@ test("Fleet vehicles and pricing rows match exact TAXI, TEMPO TRAVELLER, and LUX
     );
   }
 
-  // Verify Dzire and Etios have separate IDs and Toyota Etios has its uploaded photograph configured
+  // Verify Maruti Suzuki Dzire, Toyota Crysta, and Kia Carens use /assets/dzire.jpg, /assets/crysta.jpg, and /assets/carens.jpg instead of placeholders or browser-uploaded photos
   assert.equal(taxiCategory[0].id, "maruti-suzuki-dzire");
+  assert.equal(taxiCategory[0].imageUrl, "/assets/dzire.jpg");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[0], {}), "/assets/dzire.jpg");
+  assert.equal(
+    resolveVehicleImageUrl(taxiCategory[0], {
+      "maruti-suzuki-dzire": "data:image/jpeg;base64,browser-upload",
+    }),
+    "/assets/dzire.jpg"
+  );
+
   assert.equal(taxiCategory[1].id, "toyota-etios");
-  assert.equal(resolveVehicleImageUrl(taxiCategory[0], {}), undefined);
   assert.equal(
     taxiCategory[1].imageUrl,
     "/assets/aistudio/Gemini_Generated_Image_586qo1586qo1586q_5a226588.png"
@@ -156,17 +164,25 @@ test("Fleet vehicles and pricing rows match exact TAXI, TEMPO TRAVELLER, and LUX
     ),
     true
   );
+
+  assert.equal(taxiCategory[3].id, "toyota-crysta");
+  assert.equal(taxiCategory[3].imageUrl, "/assets/crysta.jpg");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[3], {}), "/assets/crysta.jpg");
   assert.equal(
-    resolveVehicleImageUrl(taxiCategory[0], {
-      "maruti-suzuki-dzire": "data:image/jpeg;base64,dzire",
+    resolveVehicleImageUrl(taxiCategory[3], {
+      "toyota-crysta": "data:image/jpeg;base64,browser-upload",
     }),
-    "data:image/jpeg;base64,dzire"
+    "/assets/crysta.jpg"
   );
+
+  assert.equal(taxiCategory[4].id, "kia-carens");
+  assert.equal(taxiCategory[4].imageUrl, "/assets/carens.jpg");
+  assert.equal(resolveVehicleImageUrl(taxiCategory[4], {}), "/assets/carens.jpg");
   assert.equal(
-    resolveVehicleImageUrl(taxiCategory[1], {
-      "maruti-suzuki-dzire": "data:image/jpeg;base64,dzire",
+    resolveVehicleImageUrl(taxiCategory[4], {
+      "kia-carens": "data:image/jpeg;base64,browser-upload",
     }),
-    "/assets/aistudio/Gemini_Generated_Image_586qo1586qo1586q_5a226588.png"
+    "/assets/carens.jpg"
   );
 
   // Verify Honda City, Honda Elevate, and Toyota Urban Cruiser have separate IDs, uploaded photographs, and booking options
@@ -225,7 +241,7 @@ test("Fleet vehicles and pricing rows match exact TAXI, TEMPO TRAVELLER, and LUX
     resolveVehicleImageUrl(taxiCategory[5], {
       "honda-elevate": "data:image/jpeg;base64,elevate",
     }),
-    "data:image/jpeg;base64,elevate"
+    "/assets/aistudio/elevate_honda__d17f868f.jpg"
   );
   assert.equal(
     resolveVehicleImageUrl(taxiCategory[6], {

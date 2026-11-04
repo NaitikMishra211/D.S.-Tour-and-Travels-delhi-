@@ -30,6 +30,7 @@ export const FLEET_VEHICLES: FleetVehicle[] = [
     category: "TAXI",
     ratesSectionId: "sedan-suv-rates",
     seoKeywords: ["Dzire Taxi Service Delhi", "Sedan Taxi Service Delhi"],
+    imageUrl: "/assets/dzire.jpg",
   },
   {
     id: "toyota-etios",
@@ -60,6 +61,7 @@ export const FLEET_VEHICLES: FleetVehicle[] = [
       "Toyota Crysta Rental Delhi",
       "SUV Taxi Service Delhi",
     ],
+    imageUrl: "/assets/crysta.jpg",
   },
   {
     id: "kia-carens",
@@ -68,6 +70,7 @@ export const FLEET_VEHICLES: FleetVehicle[] = [
     category: "TAXI",
     ratesSectionId: "sedan-suv-rates",
     seoKeywords: ["Kia Carens Taxi Delhi", "SUV Taxi Booking Delhi"],
+    imageUrl: "/assets/carens.jpg",
   },
   {
     id: "honda-elevate",

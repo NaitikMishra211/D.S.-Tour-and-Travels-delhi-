@@ -1,8 +1,7 @@
-import React, { useState, useRef } from "react";
-import { CarFront, Upload, Maximize2, X, Trash2 } from "lucide-react";
+import React, { useState } from "react";
+import { CarFront, Maximize2, X } from "lucide-react";
 import { FleetVehicle, VehicleCategory } from "../data/vehiclePricing";
 import {
-  useVehiclePhotos,
   resolveVehicleImageUrl,
   getVehiclesByCategory,
 } from "../utils/vehiclePhotoStore";
@@ -24,36 +23,12 @@ export const FleetSection: React.FC<FleetSectionProps> = ({
     imageUrl: string;
   } | null>(null);
 
-  const { customPhotos, uploadPhotoForVehicle, clearPhotoForVehicle } =
-    useVehiclePhotos();
-
-  const fileInputRefs = useRef<Record<string, HTMLInputElement | null>>({});
-
   const taxiVehicles = getVehiclesByCategory("TAXI");
   const tempoTravellerVehicles = getVehiclesByCategory("TEMPO TRAVELLER");
   const luxuryVehicles = getVehiclesByCategory("LUXURY CARS");
 
-  const handleTriggerUpload = (vehicleId: string) => {
-    const input = fileInputRefs.current[vehicleId];
-    if (input) {
-      input.click();
-    }
-  };
-
-  const handleFileChange = (
-    vehicleId: string,
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      uploadPhotoForVehicle(vehicleId, file);
-    }
-    e.target.value = "";
-  };
-
   const renderVehicleCard = (vehicle: FleetVehicle) => {
-    const activeImageUrl = resolveVehicleImageUrl(vehicle, customPhotos);
-    const hasCustomPhoto = Boolean(customPhotos[vehicle.id]);
+    const activeImageUrl = resolveVehicleImageUrl(vehicle);
 
     return (
       <article
@@ -61,18 +36,6 @@ export const FleetSection: React.FC<FleetSectionProps> = ({
         className="ds-interactive-card ds-reveal group flex flex-col justify-between rounded-2xl bg-white border border-[#05284D]/12 overflow-hidden transition-all duration-200 hover:-translate-y-1.5 hover:border-[#FCB017]"
       >
         <div className="relative z-10">
-          {/* Hidden File Input for Direct Vehicle Photo Upload */}
-          <input
-            ref={(el) => {
-              fileInputRefs.current[vehicle.id] = el;
-            }}
-            type="file"
-            accept="image/*"
-            onChange={(e) => handleFileChange(vehicle.id, e)}
-            className="sr-only"
-            aria-label={`Upload photograph for ${vehicle.name}`}
-          />
-
           {/* Large 16:10 Vehicle Image Frame – Primary Visual Focus */}
           <div
             className="relative flex aspect-[16/10] w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#F6F8FC] to-[#EDF2F9] border-b border-[#05284D]/10"
@@ -93,7 +56,7 @@ export const FleetSection: React.FC<FleetSectionProps> = ({
                   loading="lazy"
                 />
 
-                {/* Subtle Top-Right Controls for Full View or Updating Photo */}
+                {/* Subtle Top-Right Control for Full View */}
                 <div className="absolute top-3 right-3 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
                   <button
                     type="button"
@@ -108,31 +71,9 @@ export const FleetSection: React.FC<FleetSectionProps> = ({
                   >
                     <Maximize2 className="w-4 h-4 text-[#FCB017]" />
                   </button>
-
-                  <button
-                    type="button"
-                    onClick={() => handleTriggerUpload(vehicle.id)}
-                    aria-label={`Change photograph for ${vehicle.name}`}
-                    className="inline-flex items-center gap-1 rounded-lg bg-[#031D3D]/85 px-2.5 h-8 text-[11px] font-bold text-white hover:bg-[#031D3D] transition-colors cursor-pointer shadow-sm whitespace-nowrap"
-                  >
-                    <Upload className="w-3.5 h-3.5 text-[#FCB017]" />
-                    <span>Change Photo</span>
-                  </button>
-
-                  {hasCustomPhoto && (
-                    <button
-                      type="button"
-                      onClick={() => clearPhotoForVehicle(vehicle.id)}
-                      aria-label={`Remove uploaded photograph for ${vehicle.name}`}
-                      className="inline-flex items-center justify-center h-8 w-8 rounded-lg bg-[#031D3D]/85 text-white hover:bg-[#031D3D] transition-colors cursor-pointer shadow-sm"
-                    >
-                      <Trash2 className="w-3.5 h-3.5 text-[#FCB017]" />
-                    </button>
-                  )}
                 </div>
               </>
             ) : (
-              /* Clean Placeholder When Vehicle Photograph Has Not Been Uploaded Yet */
               <div className="flex h-full w-full flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-[#05284D]/[0.03] to-[#083D73]/[0.08]">
                 <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#05284D] text-[#FCB017] shadow-sm transition-transform duration-200 group-hover:scale-105">
                   <CarFront className="w-8 h-8" />
@@ -141,20 +82,6 @@ export const FleetSection: React.FC<FleetSectionProps> = ({
                 <span className="text-base sm:text-lg font-bold text-[#05284D]">
                   {vehicle.name}
                 </span>
-
-                <span className="mt-1 text-xs font-medium text-[#0B223E]/60">
-                  Vehicle Photograph Placeholder
-                </span>
-
-                <button
-                  type="button"
-                  onClick={() => handleTriggerUpload(vehicle.id)}
-                  aria-label={`Upload photograph for ${vehicle.name}`}
-                  className="mt-3.5 inline-flex items-center gap-1.5 rounded-lg bg-white hover:bg-[#05284D] text-[#05284D] hover:text-white border border-[#083D73]/25 px-3.5 py-1.5 text-xs font-bold transition-colors cursor-pointer shadow-2xs whitespace-nowrap"
-                >
-                  <Upload className="w-3.5 h-3.5 text-[#FCB017]" />
-                  <span>Upload Vehicle Photo</span>
-                </button>
               </div>
             )}
           </div>
