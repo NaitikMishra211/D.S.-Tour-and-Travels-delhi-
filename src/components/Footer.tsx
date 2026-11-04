@@ -89,30 +89,27 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#FCB017] shrink-0 mt-1" />
                 <div>
-                  <span className="block text-xs text-white/70">Call Number</span>
-                  <a
-                    href={BUSINESS_CONFIG.phoneHref}
-                    className="font-mono font-bold text-white hover:text-[#FCB017] transition-colors tabular-nums"
-                  >
-                    {BUSINESS_CONFIG.phone}
-                  </a>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <MessageSquare className="w-4 h-4 text-[#FCB017] shrink-0 mt-1" />
-                <div>
                   <span className="block text-xs text-white/70">
-                    WhatsApp Number
+                    Call/WhatsApp
                   </span>
-                  <a
-                    href={BUSINESS_CONFIG.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono font-bold text-white hover:text-[#FCB017] transition-colors tabular-nums"
-                  >
-                    {BUSINESS_CONFIG.whatsapp}
-                  </a>
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2.5">
+                    <a
+                      href={BUSINESS_CONFIG.phoneHref}
+                      className="font-mono font-bold text-white hover:text-[#FCB017] transition-colors tabular-nums"
+                    >
+                      {BUSINESS_CONFIG.phone}
+                    </a>
+                    <span aria-hidden="true" className="text-white/40">·</span>
+                    <a
+                      href={BUSINESS_CONFIG.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-[#FCB017] hover:underline"
+                    >
+                      <MessageSquare className="w-3.5 h-3.5" />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
                 </div>
               </li>
 

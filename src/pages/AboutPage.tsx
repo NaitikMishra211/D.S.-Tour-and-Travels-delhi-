@@ -121,7 +121,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 className="inline-flex items-center gap-2 px-5 py-3 text-xs sm:text-sm font-bold text-[#05284D] bg-[#F6F8FC] hover:bg-[#05284D] hover:text-white border border-[#05284D]/20 rounded-lg transition-colors whitespace-nowrap"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call {BUSINESS_CONFIG.phone}</span>
+                <span>Call/WhatsApp {BUSINESS_CONFIG.phone}</span>
               </a>
               <a
                 href={BUSINESS_CONFIG.whatsappUrl}

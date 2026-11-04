@@ -28,8 +28,8 @@ test("Business configuration matches exact New Delhi details", () => {
   assert.equal(BUSINESS_CONFIG.ownerName, "Daljeet Singh");
   assert.equal(BUSINESS_CONFIG.phone, "7065326532");
   assert.equal(BUSINESS_CONFIG.phoneHref, "tel:7065326532");
-  assert.equal(BUSINESS_CONFIG.whatsapp, "9871880500");
-  assert.equal(BUSINESS_CONFIG.whatsappUrl, "https://wa.me/919871880500");
+  assert.equal(BUSINESS_CONFIG.whatsapp, "7065326532");
+  assert.equal(BUSINESS_CONFIG.whatsappUrl, "https://wa.me/917065326532");
   assert.equal(
     BUSINESS_CONFIG.address,
     "OPPOSITE A 25, GULMOHAR PARK, NEAR SIRI FORT AUDITORIUM, NEW DELHI – 110049."
@@ -344,7 +344,7 @@ test("Booking enquiry validation rejects invalid inputs and accepts valid enquir
   assert.equal(Object.keys(validResult.errors).length, 0);
 
   const waUrl = buildWhatsAppEnquiryUrl(validInput);
-  assert.ok(waUrl.startsWith("https://wa.me/919871880500?text="));
+  assert.ok(waUrl.startsWith("https://wa.me/917065326532?text="));
   assert.ok(decodeURIComponent(waUrl).includes("Honda Elevate"));
   assert.ok(decodeURIComponent(waUrl).includes("D.S. Tour and Travels"));
 });
@@ -364,6 +364,8 @@ test("Zero occurrences of prohibited pricing terminology, 'Premium' business des
   );
   const bannedOldBusinessNameRegex = new RegExp("D\\.S\\s+Tour", "i");
   const bannedAndCapitalizedRegex = new RegExp("D\\.S\\.\\s+Tour\\s+And\\s+Travels");
+
+  const bannedSecondNumberRegex = new RegExp("9871" + "880500");
 
   function scanDir(dirPath: string) {
     const entries = fs.readdirSync(dirPath, { withFileTypes: true });
@@ -403,6 +405,11 @@ test("Zero occurrences of prohibited pricing terminology, 'Premium' business des
           false,
           `Found 'And' instead of 'and' in business name in ${fullPath}`
         );
+        assert.equal(
+          bannedSecondNumberRegex.test(content),
+          false,
+          `Found removed second phone number in ${fullPath}`
+        );
       }
     }
   }
@@ -415,6 +422,8 @@ test("Zero occurrences of prohibited pricing terminology, 'Premium' business des
   assert.equal(bannedCombinedElevateCruiserRegex.test(indexHtml), false);
   assert.equal(bannedOldBusinessNameRegex.test(indexHtml), false);
   assert.equal(bannedAndCapitalizedRegex.test(indexHtml), false);
+  assert.equal(bannedSecondNumberRegex.test(indexHtml), false);
+  assert.ok(indexHtml.includes("Call/WhatsApp 7065326532"));
 });
 
 test("CustomerReviewsSection contains Indian client reviews with local DP assets on disk", () => {

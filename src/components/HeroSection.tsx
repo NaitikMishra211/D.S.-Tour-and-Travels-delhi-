@@ -114,7 +114,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span>TAXI, TEMPO TRAVELLER &amp; LUXURY CARS</span>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-white/90">
+            <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-white/90">
+              <span className="font-bold text-[#FCB017]">Call/WhatsApp:</span>
               <a
                 href={BUSINESS_CONFIG.phoneHref}
                 className="inline-flex items-center gap-1.5 font-mono font-bold text-white hover:text-[#FCB017] transition-colors tabular-nums"
@@ -127,10 +128,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 href={BUSINESS_CONFIG.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-mono font-bold text-[#FCB017] hover:underline tabular-nums"
+                className="inline-flex items-center gap-1.5 font-bold text-[#FCB017] hover:underline"
               >
                 <MessageSquare className="w-3.5 h-3.5" />
-                <span>WhatsApp {BUSINESS_CONFIG.whatsapp}</span>
+                <span>WhatsApp</span>
               </a>
             </div>
           </div>

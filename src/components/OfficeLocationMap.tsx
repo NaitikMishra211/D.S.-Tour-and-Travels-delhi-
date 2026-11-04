@@ -132,7 +132,7 @@ const OfficeMarkerLayer: React.FC<{
                   {BUSINESS_CONFIG.address}
                 </p>
                 <p className="mt-1.5 text-[11px] font-semibold text-[#053B70]">
-                  Call: {BUSINESS_CONFIG.phone}
+                  Call/WhatsApp: {BUSINESS_CONFIG.phone}
                 </p>
               </div>
             </InfoWindow>

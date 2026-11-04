@@ -32,7 +32,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
     confirmed: false,
     seoTitle: "Delhi to Agra Taxi | Outstation Cab Service – D.S. Tour and Travels",
     metaDescription:
-      "Enquire about Delhi to Agra taxi booking with D.S. Tour and Travels in New Delhi. Choose Sedan, SUV, Urbania Tempo or luxury car rental options. Call 7065326532.",
+      "Enquire about Delhi to Agra taxi booking with D.S. Tour and Travels in New Delhi. Choose Sedan, SUV, Urbania Tempo or luxury car rental options. Call/WhatsApp 7065326532.",
     h1Heading: "Delhi to Agra Taxi & Outstation Cab Enquiry",
     h2Overview: "Taxi from Delhi to Agra for Family & Corporate Travel",
     h2Vehicles: "Available Fleet for Delhi to Agra Car Rental",
@@ -52,7 +52,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
       {
         question: "How do I enquire about a Delhi to Agra taxi with D.S. Tour and Travels?",
         answer:
-          "You can submit your pickup date, return date, and preferred vehicle through our online booking enquiry form, call 7065326532, or contact our team on WhatsApp at 9871880500.",
+          "You can submit your pickup date, return date, and preferred vehicle through our online booking enquiry form, or Call/WhatsApp 7065326532.",
       },
       {
         question: "Which vehicles can I request for a taxi from Delhi to Agra?",
@@ -109,7 +109,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
     confirmed: false,
     seoTitle: "Delhi to Haridwar Taxi | Outstation Cab Enquiry – D.S. Tour and Travels",
     metaDescription:
-      "Enquire for a Delhi to Haridwar taxi with D.S. Tour and Travels, New Delhi. Choose from Sedan, SUV, Urbania Tempo and luxury vehicles. Call 7065326532.",
+      "Enquire for a Delhi to Haridwar taxi with D.S. Tour and Travels, New Delhi. Choose from Sedan, SUV, Urbania Tempo and luxury vehicles. Call/WhatsApp 7065326532.",
     h1Heading: "Delhi to Haridwar Taxi & Outstation Travel Enquiry",
     h2Overview: "Taxi from Delhi to Haridwar for Family & Group Journeys",
     h2Vehicles: "Vehicle Options for Delhi to Haridwar Cab Service",
@@ -320,7 +320,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
       {
         question: "How can I contact D.S. Tour and Travels for a Delhi to Amritsar cab enquiry?",
         answer:
-          "Call 7065326532, message 9871880500 on WhatsApp, or use the booking enquiry form on our website.",
+          "Call/WhatsApp 7065326532, or use the booking enquiry form on our website.",
       },
     ],
   },
@@ -413,7 +413,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
       {
         question: "How do I enquire about multi-day outstation travel from Delhi to Ayodhya?",
         answer:
-          "Please share your pickup date, return date, and preferred vehicle in our booking enquiry form or call 7065326532 to speak with our team.",
+          "Please share your pickup date, return date, and preferred vehicle in our booking enquiry form or Call/WhatsApp 7065326532 to speak with our team.",
       },
     ],
   },
@@ -455,7 +455,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
     confirmed: false,
     seoTitle: "Delhi to Lucknow Taxi | Outstation Cab Service – D.S. Tour and Travels",
     metaDescription:
-      "Enquire for a Delhi to Lucknow taxi with D.S. Tour and Travels, New Delhi. Choose from Sedan, SUV and luxury car rental options. Call 7065326532.",
+      "Enquire for a Delhi to Lucknow taxi with D.S. Tour and Travels, New Delhi. Choose from Sedan, SUV and luxury car rental options. Call/WhatsApp 7065326532.",
     h1Heading: "Delhi to Lucknow Taxi & Outstation Cab Enquiry",
     h2Overview: "Taxi from Delhi to Lucknow for Corporate & Family Travel",
     h2Vehicles: "Sedan, SUV & Luxury Cars for Delhi to Lucknow Car Rental",
@@ -568,7 +568,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
       {
         question: "Can we enquire for Bus & Luxury Car on demand for group events?",
         answer:
-          "Yes, Bus & Luxury Car options are available On Demand. Please contact our team at 7065326532 or via WhatsApp at 9871880500.",
+          "Yes, Bus & Luxury Car options are available On Demand. Please contact our team via Call/WhatsApp at 7065326532.",
       },
     ],
   },
@@ -630,7 +630,7 @@ export const DELHI_OUTSTATION_ROUTES: OutstationRoute[] = [
       {
         question: "How can a family group enquire for a Delhi to Khatu Shyam Ji cab service?",
         answer:
-          "Select your preferred SUV or 16 Seater Urbania Tempo in our booking enquiry form, enter your travel dates, and submit your details via WhatsApp or call 7065326532.",
+          "Select your preferred SUV or 16 Seater Urbania Tempo in our booking enquiry form, enter your travel dates, and submit your details via Call/WhatsApp 7065326532.",
       },
     ],
   },

@@ -69,7 +69,7 @@ export const RouteLandingPage: React.FC<RouteLandingPageProps> = ({
               className="inline-flex items-center gap-2 rounded-lg bg-[#FFB319] hover:bg-[#FFA500] px-6 py-3 text-xs sm:text-sm font-bold text-[#05284D] transition-colors"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>WhatsApp Enquiry ({BUSINESS_CONFIG.whatsapp})</span>
+              <span>Call/WhatsApp ({BUSINESS_CONFIG.phone})</span>
             </a>
 
             <button
@@ -169,13 +169,28 @@ export const RouteLandingPage: React.FC<RouteLandingPageProps> = ({
               <p className="text-sm text-white/85">
                 {BUSINESS_CONFIG.address}
               </p>
-              <a
-                href={BUSINESS_CONFIG.phoneHref}
-                className="flex items-center gap-2 text-sm font-mono font-bold text-[#FFB319]"
-              >
-                <Phone className="w-4 h-4" />
-                <span>{BUSINESS_CONFIG.phone}</span>
-              </a>
+              <div className="space-y-1.5">
+                <span className="block text-xs text-white/75">Call/WhatsApp</span>
+                <div className="flex flex-wrap items-center gap-2.5">
+                  <a
+                    href={BUSINESS_CONFIG.phoneHref}
+                    className="flex items-center gap-1.5 text-sm font-mono font-bold text-[#FFB319]"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>{BUSINESS_CONFIG.phone}</span>
+                  </a>
+                  <span aria-hidden="true" className="text-white/40">·</span>
+                  <a
+                    href={BUSINESS_CONFIG.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-xs font-bold text-[#FFB319] hover:underline"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </aside>
         </div>

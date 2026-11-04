@@ -40,8 +40,8 @@ export const BUSINESS_CONFIG: BusinessConfig = {
   ownerDesignation: "Founder & Owner – D.S. Tour and Travels",
   phone: "7065326532",
   phoneHref: "tel:7065326532",
-  whatsapp: "9871880500",
-  whatsappUrl: "https://wa.me/919871880500",
+  whatsapp: "7065326532",
+  whatsappUrl: "https://wa.me/917065326532",
   address: "OPPOSITE A 25, GULMOHAR PARK, NEAR SIRI FORT AUDITORIUM, NEW DELHI – 110049.",
   city: "New Delhi",
   state: "Delhi",
@@ -63,13 +63,13 @@ export const BUSINESS_CONFIG: BusinessConfig = {
   seo: {
     homeTitle: "D.S. Tour and Travels | Taxi Service in Delhi & Outstation Cabs",
     homeDescription:
-      "Looking for taxi service in Delhi? Contact D.S. Tour and Travels for local taxi booking and outstation cab enquiries. Choose Sedan, SUV, Urbania Tempo and luxury cars. Call 7065326532.",
+      "Looking for taxi service in Delhi? Contact D.S. Tour and Travels for local taxi booking and outstation cab enquiries. Choose Sedan, SUV, Urbania Tempo and luxury cars. Call/WhatsApp 7065326532.",
     aboutTitle: "About D.S. Tour and Travels | Taxi Service in New Delhi",
     aboutDescription:
       "Learn about D.S. Tour and Travels, founded by Daljeet Singh in New Delhi. Dependable local taxi booking and outstation cab service with Sedan, SUV and luxury vehicle options.",
     contactTitle: "Contact D.S. Tour and Travels | Book a Taxi in New Delhi",
     contactDescription:
-      "Contact D.S. Tour and Travels at Gulmohar Park, New Delhi – 110049. Call 7065326532 or message 9871880500 on WhatsApp for taxi booking enquiries and vehicle rates.",
+      "Contact D.S. Tour and Travels at Gulmohar Park, New Delhi – 110049. Call/WhatsApp 7065326532 for taxi booking enquiries and vehicle rates.",
     primaryKeywords: [
       "Taxi Service in Delhi",
       "Taxi Booking in Delhi",

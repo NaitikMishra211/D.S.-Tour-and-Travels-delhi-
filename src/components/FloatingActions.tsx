@@ -42,7 +42,7 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
           href={BUSINESS_CONFIG.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Chat on WhatsApp at ${BUSINESS_CONFIG.whatsapp}`}
+          aria-label={`Call/WhatsApp ${BUSINESS_CONFIG.phone}`}
           className="hidden sm:inline-flex items-center gap-2 rounded-full bg-[#FFB319] hover:bg-[#FFA500] px-3.5 py-2.5 text-xs font-bold text-[#05284D] shadow-md transition-colors"
         >
           <MessageSquare className="w-4 h-4" />
